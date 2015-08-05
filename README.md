@@ -16,10 +16,10 @@ You'll need node.js installed in your environment.
 run
 
 ```
-mocha tests/transform.mocha.js
+npm test
 ```
 
 to see the failing unit tests.  Fill in the function in transform.js.
 This test is about understanding passing functions as arguments.  This is not a
- trick question, so a very naive implementation will work.
+trick question, so a simple implementation will work.
 
