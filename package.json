@@ -8,7 +8,7 @@
   },
   "devDependencies": {},
   "scripts": {
-    "test": "mocha --ui tdd tests"
+    "test": "./node_modules/mocha/bin/mocha --ui tdd"
   },
   "repository": {
     "type": "git",
