@@ -1,8 +1,13 @@
 # javascriptTests
 Javascript Interview Tests
 
-## Setup
-Clone the git repo then in the javascriptTests directory run
+## Instructions
+Please fork this repo, and clone the fork.  Once you are done, push your changes
+to github, and send a pull request.  I may give you some code comments and ask
+you to make some changes.
+
+
+To get started on the problems in the javascriptTests directory run
 
 ```
 npm install
