@@ -1,5 +1,5 @@
 # javascriptTests
-Javascript Interview Tests
+Scale Computing Javascript Interview Tests
 
 ## Instructions
 Please fork this repo, and clone the fork.  Once you are done, push your changes
@@ -7,30 +7,34 @@ to github, and send a pull request.  I may give you some code comments and ask
 you to make some changes.
 
 
-To get started on the problems in the javascriptTests directory run
+You'll need node.js installed in your environment.  To setup to run the unit
+tests run:
 
 ```
 npm install
 ```
+Now, if you run:
+```
+npm test
+```
+You should see 6 passing and 3 failing unit tests, and you're ready to get
+started with the problems.
 
-You'll need node.js installed in your environment.
+## Problem 1: Transform
 
-
-## Test 1: Transform
-
-run
+To see the failing unit tests run:
 
 ```
 ./node_modules/mocha/bin/mocha --ui tdd test/transform.mocha.js
 ```
 
-to see the failing unit tests.  Fill in the function in transform.js.
-This test is about understanding passing functions as arguments.  This is not a
-trick question, so a simple implementation will work.
+Fill in the function in transform.js. This test is about understanding passing
+functions as arguments.  This is not a trick question, so a simple for loop
+implementation will work.
 
-## Test 2: Events (part 1)
+## Problem 2: Events (part 1)
 
-run
+Run:
 
 ```
 ./node_modules/mocha/bin/mocha --ui tdd test/event.mocha.js
@@ -43,16 +47,9 @@ getData should return the recently set data.
 Write a failing unit test to validate the bug exists.
 
 
-## Test 3: Events (part 2)
+## Problem 3: Events (part 2)
 
-run
-
-```
-./node_modules/mocha/bin/mocha --ui tdd test/event.mocha.js
-```
-
-to see the failing unit test you made in Test 2.  Fix the code in event.js to
-get all the unit tests passing.  Please do not change the signature of public
-methods.
+Now that you have a failing unit tests, fix the code in event.js to get all the
+unit tests passing.  Please do not change the signature of public methods.
 
 
