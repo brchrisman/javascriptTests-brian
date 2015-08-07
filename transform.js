@@ -17,5 +17,5 @@
  * you can assume all arrays will not be sparse and will start at the 0 index
  */
 module.exports = function arrayTransform(a, f) {
-
+    return a.map(f);
 };
