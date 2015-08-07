@@ -23,9 +23,9 @@ module.exports = function changeEmitterFactory() {
    *
    * private
    */
-  function emitOnDiff(newData) {
-    if (newData !== data) {
-      changeEmitter.emit('change', newData);
+  function emitOnDiff(oldData) {
+    if (oldData !== data) {
+      changeEmitter.emit('change', data);
     }
   }
 
@@ -36,10 +36,11 @@ module.exports = function changeEmitterFactory() {
    * public
    */
   changeEmitter.setData = function setData(newData) {
-    emitOnDiff(newData);
+    var oldData = data;
+    data = newData;
+    emitOnDiff(oldData);
 
     // set the data here
-    data = newData;
   };
 
   /**

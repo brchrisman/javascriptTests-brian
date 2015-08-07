@@ -69,6 +69,13 @@ suite('changeEmitter', function () {
     });
 
     // Failing unit test should go here
+    test('should return the current data', function () {
+      changeEmitter.setData('foo');
+      changeEmitter.on('change', function (data) {
+        expect(changeEmitter.getData()).to.equal(data);
+      });
+      changeEmitter.setData('bar');
+    });
 
   });
 });
