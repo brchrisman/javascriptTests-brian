@@ -28,7 +28,7 @@ to see the failing unit tests.  Fill in the function in transform.js.
 This test is about understanding passing functions as arguments.  This is not a
 trick question, so a simple implementation will work.
 
-## Test 2: Events
+## Test 2: Events (part 1)
 
 run
 
@@ -36,7 +36,23 @@ run
 ./node_modules/mocha/bin/mocha --ui tdd test/event.mocha.js
 ```
 
-to see the failing unit test.  Fix the code in event.js to get all the unit
-tests passing.  Please do not change the signature of public methods.
+All the unit tests pass, but there is a bug.  Calling getData in the "change"
+event callback handler returns the old data, but set has already been called, so
+getData should return the recently set data.
+
+Write a failing unit test to validate the bug exists.
+
+
+## Test 3: Events (part 2)
+
+run
+
+```
+./node_modules/mocha/bin/mocha --ui tdd test/event.mocha.js
+```
+
+to see the failing unit test you made in Test 2.  Fix the code in event.js to
+get all the unit tests passing.  Please do not change the signature of public
+methods.
 
 
