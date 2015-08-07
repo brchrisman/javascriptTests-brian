@@ -17,19 +17,36 @@ module.exports = function changeEmitterFactory() {
 
   var data;
 
+  /**
+   * Emit a change event if the data is changed
+   * param newData the data that we're updating to
+   *
+   * private
+   */
   function emitOnDiff(newData) {
     if (newData !== data) {
       changeEmitter.emit('change', newData);
     }
   }
 
+  /**
+   * Set the data
+   * param newData the data that we're updating to
+   *
+   * public
+   */
   changeEmitter.setData = function setData(newData) {
     emitOnDiff(newData);
 
-    // set data in this function - do not change this!
+    // set the data here
     data = newData;
   };
 
+  /**
+   * Get the current data
+   *
+   * public
+   */
   changeEmitter.getData = function getData() {
     return data;
   };

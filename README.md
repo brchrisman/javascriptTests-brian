@@ -37,6 +37,6 @@ run
 ```
 
 to see the failing unit test.  Fix the code in event.js to get all the unit
-tests passing.
+tests passing.  Please do not change the signature of public methods.
 
 
